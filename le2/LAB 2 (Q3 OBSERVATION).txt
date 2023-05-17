@@ -1,0 +1,18 @@
+﻿LAB 2 (Q3 OBSERVATION)
+Mother class function
+	Child class function
+	Observation
+	Static
+	Not static
+	show() in Child cannot override show() in Mother
+	Static
+	Static
+	No error
+	Non-static
+	Static
+	error: show() in Child cannot override show() in Mother
+
+
+	Non-static
+	Non-static
+	No error

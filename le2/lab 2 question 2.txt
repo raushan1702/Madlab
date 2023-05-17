@@ -1,0 +1,23 @@
+public class Main
+{
+	public static void main(String[] args) {
+		Mother m1= new Mother();
+		m1.show();
+		Child c1=new Child();
+		c1.show();
+	}
+}
+
+class Mother{
+    int a;
+    void show(){
+        System.out.println("HELLO THIS IS MOTHER CLASS");
+    }
+}
+
+class Child extends Mother{
+    int y;
+    void show(){
+        System.out.println("HELLO THIS IS CHILD CLASS");
+    }
+}

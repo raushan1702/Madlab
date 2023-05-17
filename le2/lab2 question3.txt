@@ -1,0 +1,39 @@
+public class Main
+{
+	public static void main(String[] args) {
+		Mother m1= new Child();//child class show function will be called
+		m1.show();
+		Child c1=new Child();
+		c1.show();
+	}
+}
+
+class Mother{
+    int a;
+    /*void show(){
+        System.out.println("HELLO THIS IS MOTHER CLASS");
+    }*/
+    static void show(){
+        System.out.println("HELLO THIS IS MOTHER CLASS"); // cannot call a static method 
+    }
+}
+
+class Child extends Mother{
+    int y;
+    /*void show(){
+        System.out.println("HELLO THIS IS CHILD CLASS");
+    }*/
+    static void show(){
+        System.out.println("HELLO THIS IS CHILD CLASS");//error: show() in Child cannot override show() in Mother
+    }
+}
+
+/*public class Main1
+{
+	public static void main(String[] args) {
+		Mother m1= new Child();//child class show function will be called
+		m1.show();
+		Child c1=new Child();
+		c1.show();
+	}
+}*/
